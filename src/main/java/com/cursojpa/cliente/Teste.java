@@ -14,16 +14,16 @@ public class Teste {
 	public static void main(String[] args) {
 		
 		// FIND
-		Cliente cliente = entityManager.find(Cliente.class, 1);
-		System.out.println("Nome do cliente: " + cliente.getNome());
+//		Cliente cliente = entityManager.find(Cliente.class, 1);
+//		System.out.println("Nome do cliente: " + cliente.getNome());
 		
 		
 		// INSERT
-//		Cliente cliente = new Cliente();
-//		cliente.setNome("GOOGLE");
-//		entityManager.getTransaction().begin();		
-//		entityManager.persist(cliente);
-//		entityManager.getTransaction().commit();
+		Cliente cliente = new Cliente();
+		cliente.setNome("SAMSUNG");
+		entityManager.getTransaction().begin();		
+		entityManager.persist(cliente);
+		entityManager.getTransaction().commit();
 		
 		
 		// DELETE
